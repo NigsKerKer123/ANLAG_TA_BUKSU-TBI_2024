@@ -1,188 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
-      rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
-  </head>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="dist/img/favicon.png"/>
+	
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="dist/css/uikit.css"/>
+	<title>Cento</title>
+</head>
+<body>
+	<!-- Start Header -->
+	<header>
+		<div class="uk-container">
+			<nav class="uk-navbar">
+				<div class="uk-navbar-left">
+					<a class="uk-navbar-item uk-logo uk-padding-remove-left uk-text-bold uk-text-primary" href="#">Cento</a>
+				</div>
 
-  <body>
-    <!-- header -->
-    <nav
-      class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 dark:bg-opacity-[.80]">
-      <div
-        class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a
-          href="https://flowbite.com/"
-          class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="assets/images/Anlag Logo.png" class="h-[4rem]" alt="Logo" />
-        </a>
+				<div class="uk-navbar-right">
+					<ul class="uk-navbar-nav">
+						<li class="uk-active"><a href="#">Contact us</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!-- End Header -->
 
-        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <button
-            data-collapse-toggle="navbar-sticky"
-            type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-sticky"
-            aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg
-              class="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14">
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15" />
-            </svg>
-          </button>
+	<!-- Start Hero -->
+	<section>
+		<div class="uk-section uk-section-small">
+			<div class="uk-container">
+				<div class="uk-grid-medium uk-child-width-1-2@s uk-flex uk-flex-middle" uk-grid>
+					<div>
+						<h1 class="uk-heading-small uk-text-bold">Free landing page template for startups</h1>
+						<p class="uk-text-large uk-width-large">This is responsive free template for your project. Just put your data and use it.</p>
+						<div class="uk-grid-small uk-child-width-auto@s uk-margin-medium-top" uk-grid>
+							<div>
+								<button class="uk-button uk-button-primary uk-button-large uk-border-rounded uk-width-1-1 uk-text-bold">Get early access</button>
+							</div>
+							<div>
+								<button class="uk-button uk-button-default uk-button-large uk-border-rounded uk-width-1-1 uk-text-bold">Learn more</button>
+							</div>
+						</div>
+						<div class="uk-grid-medium uk-child-width-auto@s uk-margin-medium-top" uk-grid>
+							<div>
+								<span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.2"></span>
+								<span class="uk-text-middle">Feature</span>
+							</div>
+							<div>
+								<span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.2"></span>
+								<span class="uk-text-middle">Feature</span>
+							</div>
+							<div>
+								<span class="uk-margin-small-right" uk-icon="icon: check; ratio: 1.2"></span>
+								<span class="uk-text-middle">Feature</span>
+							</div>
+						</div>
+					</div>
+					<div>
+						<img src="dist/img/illustration.png" alt="">
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- End Hero -->
 
-          <img src="assets/images/fb logo.png" alt="fb logo" class="h-[2rem]" />
-        </div>
+	<!-- Start Features -->
+	<section>
+		<div class="uk-section uk-margin-large-bottom">
+			<div class="uk-container">
+				<div class="uk-grid-medium uk-child-width-1-2@s uk-margin-medium-top" uk-grid>
+					<div>
+						<h2 class="uk-text-bold uk-heading-small">Features</h2>
+					</div>
+					<div>
+						<p class="uk-width-xlarge uk-text-large">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatum, corporis natus? Qui fuga nulla eaque porro atque ipsa! Ab cumque sunt quia officia iure veritatis voluptas incidunt fugit quisquam.</p>
+					</div>
+				</div>
+				<div class="uk-grid-medium uk-child-width-1-4@s uk-margin-large-top" uk-grid>
+					<div>
+						<div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+						    <div class="uk-card-header">
+						        <div class="uk-grid-small uk-flex-middle" uk-grid>
+						            <div class="uk-width-auto">
+						                <span class="uk-text-primary" uk-icon="icon: lifesaver; ratio: 2"></span>
+						            </div>
+						            <div class="uk-width-expand">
+						                <h3 class="uk-card-title uk-margin-remove-bottom">Feature</h3>
+						            </div>
+						        </div>
+						    </div>
+						    <div class="uk-card-body">
+						        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						    </div>
+						</div>
+					</div>
+					<div>
+						<div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+						    <div class="uk-card-header">
+						        <div class="uk-grid-small uk-flex-middle" uk-grid>
+						            <div class="uk-width-auto">
+						                <span class="uk-text-primary" uk-icon="icon: lifesaver; ratio: 2"></span>
+						            </div>
+						            <div class="uk-width-expand">
+						                <h3 class="uk-card-title uk-margin-remove-bottom">Feature</h3>
+						            </div>
+						        </div>
+						    </div>
+						    <div class="uk-card-body">
+						        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						    </div>
+						</div>
+					</div>
+					<div>
+						<div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+						    <div class="uk-card-header">
+						        <div class="uk-grid-small uk-flex-middle" uk-grid>
+						            <div class="uk-width-auto">
+						                <span class="uk-text-primary" uk-icon="icon: lifesaver; ratio: 2"></span>
+						            </div>
+						            <div class="uk-width-expand">
+						                <h3 class="uk-card-title uk-margin-remove-bottom">Feature</h3>
+						            </div>
+						        </div>
+						    </div>
+						    <div class="uk-card-body">
+						        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						    </div>
+						</div>
+					</div>
+					<div>
+						<div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+						    <div class="uk-card-header">
+						        <div class="uk-grid-small uk-flex-middle" uk-grid>
+						            <div class="uk-width-auto">
+						                <span class="uk-text-primary" uk-icon="icon: lifesaver; ratio: 2"></span>
+						            </div>
+						            <div class="uk-width-expand">
+						                <h3 class="uk-card-title uk-margin-remove-bottom">Feature</h3>
+						            </div>
+						        </div>
+						    </div>
+						    <div class="uk-card-body">
+						        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Features -->
 
-        <div
-          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-          id="navbar-sticky">
-          <ul
-            class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-                aria-current="page"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >Gallery</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+	<!-- Start About us -->
+	<section class="uk-position-relative uk-position-relative">
+		<div class="uk-section uk-section-primary uk-section-large">
+			<div class="uk-container">
+				<div class="uk-grid-medium" uk-grid>
+					<div class="uk-width-2-3@s">
+						<h4 class="uk-text-bold">About us</h4>
+						<p class="uk-h2 uk-margin-medium-bottom">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Corrupti tempora ducimus ipsam labore nemo, repudiandae nihil saepe eos optio sequi laudantium sit sunt impedit quia amet aliquid consequuntur ratione mollitia ea placeat. Deserunt harum distinctio hic quaerat, quod dolor quia reprehenderit ratione.</p>
+						<button class="uk-button uk-button-default uk-button-large uk-border-rounded uk-width-1-1 uk-width-auto@s">More about us</button>
+					</div>
+					<div>
+						
+					</div>
+					<div class="uk-position-center-right uk-visible@s">
+						<img width="550" src="dist/img/about-us.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End About us -->
 
-    <!-- body -->
-    <div class="relative mt-[6rem]">
-      <section class="bg-yellow-50 overflow-hidden">
-        <div
-          class="flex flex-col lg:flex-row lg:items-stretch lg:min-h-[800px]">
-          <div
-            class="relative flex items-center justify-center w-full lg:order-2 lg:w-7/12">
-            <div class="absolute bottom-0 right-0 hidden lg:block">
-              <img
-                class="object-contain w-auto h-48"
-                src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/3/curved-lines.png"
-                alt="" />
-            </div>
+	<!-- Start Footer -->
+	<footer>
+		<section>
+			<div class="uk-section uk-section-large uk-section-secondary">
+				<div class="uk-container">
+					<div class="uk-grid-medium uk-child-width-1-2@s uk-margin-large-bottom uk-flex uk-flex-middle" uk-grid>
+						<div>
+							<h2 class="uk-text-bold uk-heading-small">Join the early access</h2>
+							<p class="uk-text-large">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis amet natus vel optio ut, est?</p>
+						</div>
+						<div class="uk-text-right@s">
+							<button class="uk-button uk-button-primary uk-button-large uk-border-rounded uk-width-medium@s uk-text-bold">Get early access</button>
+						</div>
+					</div>
+					<hr>
+					<div class="uk-grid-medium uk-child-width-1-3@s" uk-grid>
+						<div>
+							<a class="uk-logo uk-padding-remove-left uk-text-bold" href="#">Cento</a>
+						</div>
+						<div class="uk-text-center@s">
+							<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+							<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+							<a href="" class="uk-icon-button" uk-icon="youtube"></a>
+						</div>
+						<div class="uk-text-right@s">
+							<a class="uk-link-text uk-h3" href="mailto:hi@cento.com">hi@cento.com</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</footer>
 
-            <div
-              class="relative px-4 pt-24 pb-16 text-center sm:px-6 md:px-24 2xl:px-32 lg:py-24 lg:text-left">
-              <h1 class="text-4xl font-bold text-black sm:text-6xl xl:text-8xl">
-                Get it done.<br />
-                Fast, Easy.
-              </h1>
-              <p class="mt-8 text-xl text-black">
-                We help you to make your remote work life easier. Build a
-                distruction free working experience.
-              </p>
-
-              <form
-                action="#"
-                method="POST"
-                class="max-w-xl mx-auto mt-8 bg-white lg:mx-0 sm:bg-transparent lg:mt-12 rounded-xl">
-                <div
-                  class="p-4 sm:p-2 sm:bg-white sm:border-2 sm:border-transparent sm:rounded-full sm:focus-within:border-orange-500 sm:focus-within:ring-1 sm:focus-within:ring-orange-500">
-                  <div class="flex flex-col items-start sm:flex-row">
-                    <div class="flex-1 w-full min-w-0">
-                      <div
-                        class="relative text-gray-400 focus-within:text-gray-600">
-                        <label for="email" class="sr-only"></label>
-                        <input
-                          type="email"
-                          name="email"
-                          id="email"
-                          placeholder="Enter email to get started"
-                          class="block w-full px-4 py-4 text-base text-center text-black placeholder-gray-500 transition-all duration-200 border-transparent rounded-full sm:text-left focus:border-transparent focus:ring-0 caret-orange-500"
-                          required="" />
-                      </div>
-                    </div>
-
-                    <button
-                      type="submit"
-                      class="inline-flex items-center justify-center w-full px-4 py-4 mt-4 font-semibold text-white transition-all duration-200 bg-orange-500 border border-transparent rounded-full sm:w-auto sm:ml-4 sm:mt-0 hover:bg-orange-600 focus:bg-orange-600">
-                      Try 14 days free
-                    </button>
-                  </div>
-                </div>
-              </form>
-              <p class="mt-5 text-base text-black">
-                Instant access . No credit card required
-              </p>
-            </div>
-
-            <div class="absolute right-0 z-10 -bottom-16 lg:top-24 lg:-left-20">
-              <img
-                class="w-32 h-32 md:w-40 md:h-40"
-                src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/3/circular-text.png"
-                alt="" />
-            </div>
-          </div>
-
-          <div
-            class="relative w-full overflow-hidden lg:order-1 h-96 lg:h-auto lg:w-5/12">
-            <div class="absolute inset-0">
-              <img
-                class="object-cover w-full h-full scale-150"
-                src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/3/man-working-on-laptop.jpg"
-                alt="" />
-            </div>
-
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
-
-            <div class="absolute bottom-0 left-0">
-              <div class="p-4 sm:p-6 lg:p-8">
-                <div class="flex items-center">
-                  <svg
-                    class="w-10 h-10 text-orange-500"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor">
-                    <path
-                      fill-rule="evenodd"
-                      d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
-                      clip-rule="evenodd" />
-                  </svg>
-                  <h2 class="font-bold text-white text-7xl ml-2.5">395</h2>
-                </div>
-                <p class="max-w-xs mt-1.5 text-xl text-white">
-                  Professionals have organized their desk via PostCra
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  </body>
+	<!-- UIkit JS -->
+	<script src="dist/js/uikit.min.js"></script>
+	<script src="dist/js/uikit-icons.min.js"></script>
+</body>
 </html>
