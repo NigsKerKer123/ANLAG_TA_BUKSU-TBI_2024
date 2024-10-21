@@ -16,10 +16,49 @@
     <link rel="stylesheet" href="dist/css/uikit.css" />
 
     <title>ANLAG TA BUKSU-TBI</title>
+
+    <style>
+      @keyframes shake {
+        0% {
+          transform: translate(0);
+        }
+        25% {
+          transform: translate(-5px, 0);
+        }
+        50% {
+          transform: translate(5px, 0);
+        }
+        75% {
+          transform: translate(-5px, 0);
+        }
+        100% {
+          transform: translate(0);
+        }
+      }
+      .hover\:shake:hover {
+        animation: shake 0.5s ease-in-out;
+      }
+      .zoom {
+        transition: transform 0.3s ease;
+      }
+
+      .zoom:hover {
+        transform: scale(1.1);
+      }
+    </style>
   </head>
-  <body class="bg-gray-100">
+  <body
+    class="bg-gray-100"
+    style="
+      background-image: url('dist/img/background.png');
+      background-size: fit;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100vw 100vh;
+    ">
     <!-- Start Header -->
-    <header class="bg-white">
+    <header class="bg-white bg-opacity-90">
       <div class="uk-container">
         <nav>
           <div
@@ -50,7 +89,7 @@
             </button>
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
               <ul
-                class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+                class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
                 <li>
                   <a
                     href="#"
@@ -84,7 +123,7 @@
     <!-- Start Hero -->
     <section>
       <div class="mt-[3rem] mb-[3rem]">
-        <div class="uk-container bg-white">
+        <div class="uk-container bg-white bg-opacity-90">
           <div
             class="uk-grid-medium uk-child-width-1-2@s uk-flex uk-flex-middle p-[2rem]"
             uk-grid>
@@ -105,14 +144,17 @@
                 uk-grid>
                 <div>
                   <button
-                    class="bg-yellow-200 uk-button uk-button-large uk-border-rounded uk-width-1-1 uk-text-bold">
+                    class="drop-shadow-md hover:bg-yellow-300 bg-yellow-200 uk-button uk-button-large uk-border-rounded uk-width-1-1 uk-text-bold">
                     Learn more
                   </button>
                 </div>
               </div>
             </div>
             <div>
-              <img src="dist/img/Anlag_Logo.png" alt="img" />
+              <img
+                class="uk-card uk-card-default uk-card-hover uk-border-rounded"
+                src="dist/img/Anlag_Logo.png"
+                alt="img" />
             </div>
           </div>
         </div>
@@ -123,7 +165,7 @@
     <!-- Start mission, vision and goal -->
     <section>
       <div class="mb-[3rem]">
-        <div class="uk-container bg-white pt-10 pb-10">
+        <div class="uk-container bg-white pt-10 pb-10 bg-white bg-opacity-90">
           <div class="grid lg:grid-cols-3 gap-4">
             <div>
               <div
@@ -134,7 +176,7 @@
                       <img
                         src="dist/img/vision.png"
                         alt="vision logo"
-                        class="h-10 w-auto" />
+                        class="h-10 w-auto hover:shake" />
                     </div>
                     <div class="uk-width-expand">
                       <h3 class="uk-card-title uk-margin-remove-bottom">
@@ -161,7 +203,7 @@
                       <img
                         src="dist/img/mission.png"
                         alt="vision logo"
-                        class="h-10 w-auto" />
+                        class="h-10 w-auto hover:shake" />
                     </div>
                     <div class="uk-width-expand">
                       <h3 class="uk-card-title uk-margin-remove-bottom">
@@ -190,7 +232,7 @@
                       <img
                         src="dist/img/goal.png"
                         alt="vision logo"
-                        class="h-10 w-auto" />
+                        class="h-10 w-auto hover:shake" />
                     </div>
                     <div class="uk-width-expand">
                       <h3 class="uk-card-title uk-margin-remove-bottom">
@@ -220,7 +262,7 @@
     <!-- Start Gallery -->
     <section>
       <div class="mt-[3rem] mb-[3rem]">
-        <div class="uk-container bg-white">
+        <div class="uk-container bg-white bg-white bg-opacity-90">
           <h1 class="uk-heading-small uk-text-bold uk-text-center p-4 mt-4">
             Gallery
           </h1>
@@ -320,19 +362,19 @@
             <div class="grid gap-4">
               <div>
                 <img
-                  class="h-auto max-w-full rounded-lg"
+                  class="h-auto max-w-full rounded-lg zoom"
                   src="dist/img/gallery/1.jfif"
                   alt="" />
               </div>
               <div>
                 <img
-                  class="h-auto max-w-full rounded-lg"
+                  class="h-auto max-w-full rounded-lg zoom"
                   src="dist/img/gallery/2.jfif"
                   alt="" />
               </div>
               <div>
                 <img
-                  class="h-auto max-w-full rounded-lg"
+                  class="h-auto max-w-full rounded-lg zoom"
                   src="dist/img/gallery/3.jfif"
                   alt="" />
               </div>
@@ -340,19 +382,19 @@
             <div class="grid gap-4">
               <div>
                 <img
-                  class="h-auto max-w-full rounded-lg"
+                  class="h-auto max-w-full rounded-lg zoom"
                   src="dist/img/gallery/4.jfif"
                   alt="" />
               </div>
               <div>
                 <img
-                  class="h-auto max-w-full rounded-lg"
+                  class="h-auto max-w-full rounded-lg zoom"
                   src="dist/img/gallery/5.jfif"
                   alt="" />
               </div>
               <div>
                 <img
-                  class="h-auto max-w-full rounded-lg"
+                  class="h-auto max-w-full rounded-lg zoom"
                   src="dist/img/gallery/6.jfif"
                   alt="" />
               </div>
@@ -360,19 +402,19 @@
             <div class="grid gap-4">
               <div>
                 <img
-                  class="h-auto max-w-full rounded-lg"
+                  class="h-auto max-w-full rounded-lg zoom"
                   src="dist/img/gallery/7.jfif"
                   alt="" />
               </div>
               <div>
                 <img
-                  class="h-auto max-w-full rounded-lg"
+                  class="h-auto max-w-full rounded-lg zoom"
                   src="dist/img/gallery/8.jfif"
                   alt="" />
               </div>
               <div>
                 <img
-                  class="h-auto max-w-full rounded-lg"
+                  class="h-auto max-w-full rounded-lg zoom"
                   src="dist/img/gallery/9.jfif"
                   alt="" />
               </div>
@@ -380,20 +422,20 @@
             <div class="grid gap-4">
               <div>
                 <img
-                  class="h-auto max-w-full rounded-lg"
-                  src="dist/img/gallery/10.jfif"
-                  alt="" />
-              </div>
-              <div>
-                <img
-                  class="h-auto max-w-full rounded-lg"
+                  class="h-auto max-w-full rounded-lg zoom"
                   src="dist/img/gallery/11.jfif"
                   alt="" />
               </div>
               <div>
                 <img
-                  class="h-auto max-w-full rounded-lg"
+                  class="h-auto max-w-full rounded-lg zoom"
                   src="dist/img/gallery/12.jfif"
+                  alt="" />
+              </div>
+              <div>
+                <img
+                  class="h-auto max-w-full rounded-lg zoom"
+                  src="dist/img/gallery/13.jfif"
                   alt="" />
               </div>
             </div>
@@ -401,7 +443,7 @@
 
           <div class="flex justify-center items-center">
             <button
-              class="bg-yellow-200 uk-button h-auto w-auto uk-border-rounded uk-width-1-1 uk-text-bold mb-4">
+              class="drop-shadow-md hover:bg-yellow-300 bg-yellow-200 uk-button h-auto w-auto uk-border-rounded uk-width-1-1 uk-text-bold mb-4">
               more
             </button>
           </div>
