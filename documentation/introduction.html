@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../dist/img/favicon.png" />
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="../dist/css/uikit.css" />
+
+    <title>ANLAG TA BUKSU-TBI: Documentation</title>
+  </head>
+  <body
+    class="bg-gray-100"
+    style="
+      background-image: url('../dist/img/background.png');
+      background-size: fit;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100vw 100vh;
+    ">
+    <!-- sidebar and container -->
+    <section class="uk-container relative">
+      <button
+        data-drawer-target="sidebar-multi-level-sidebar"
+        data-drawer-toggle="sidebar-multi-level-sidebar"
+        aria-controls="sidebar-multi-level-sidebar"
+        type="button"
+        class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+        <span class="sr-only">Open sidebar</span>
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            clip-rule="evenodd"
+            fill-rule="evenodd"
+            d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+        </svg>
+      </button>
+
+      <!-- sidebar -->
+      <aside
+        id="sidebar-multi-level-sidebar"
+        class="absolute top-0 left-0 z-40 w-80 h-screen lg:mt-4 md:mt-4 transition-transform -translate-x-full sm:translate-x-0"
+        aria-label="Sidebar">
+        <div
+          class="rounded-lg h-full px-3 py-4 overflow-y-auto bg-white bg-opacity-80">
+          <ul class="space-y-2 font-medium">
+            <li>
+              <a
+                href="../index.html"
+                class="flex items-center p-2 text-gray-900 rounded-lg group">
+                <img
+                  style="width: 200px; height: auto"
+                  src="../dist/img/Logo.png"
+                  alt="Logo" />
+              </a>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="flex items-center w-full p-2 text-base text-black transition duration-75 rounded-lg group hover:bg-gray-100"
+                aria-controls="dropdown-example"
+                data-collapse-toggle="dropdown-example">
+                <span
+                  class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap uk-text-bold"
+                  >Introduction</span
+                >
+                <svg
+                  class="w-3 h-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4" />
+                </svg>
+              </button>
+              <ul id="dropdown-example" class="hidden py-2 space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center w-full p-2 text-gray-500 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >Overview</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center w-full p-2 text-gray-500 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >Vision, Mission, and Goal
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center w-full p-2 text-gray-500 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >Objectives
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center w-full p-2 text-gray-500 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center w-full p-2 text-gray-500 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >Role</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center w-full p-2 text-gray-500 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >Areas of Focus
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center w-full p-2 text-gray-500 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >Brand and Logo
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center w-full p-2 text-gray-500 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >The TBI Ecosystem</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center p-2 text-black rounded-lg hover:bg-gray-100 group uk-text-bold">
+                <span class="flex-1 ms-3 whitespace-nowrap">Purpose </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center p-2 text-black rounded-lg hover:bg-gray-100 group uk-text-bold">
+                <span class="flex-1 ms-3 whitespace-nowrap"
+                  >Contents and Scope</span
+                >
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center p-2 text-black rounded-lg hover:bg-gray-100 group uk-text-bold">
+                <span class="flex-1 ms-3 whitespace-nowrap"
+                  >Definition of Terms
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center p-2 text-black rounded-lg hover:bg-gray-100 group uk-text-bold">
+                <span class="flex-1 ms-3 whitespace-nowrap"
+                  >Organizational Structure
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center p-2 text-black rounded-lg hover:bg-gray-100 group uk-text-bold">
+                <span class="flex-1 ms-3 whitespace-nowrap"
+                  >Operational Strategies
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center p-2 text-black rounded-lg hover:bg-gray-100 group uk-text-bold">
+                <span class="flex-1 ms-3 whitespace-nowrap"
+                  >Implementing Strategies
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center p-2 text-black rounded-lg hover:bg-gray-100 group uk-text-bold">
+                <span class="flex-1 ms-3 whitespace-nowrap"
+                  >TBI Sustainability
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center p-2 text-black rounded-lg hover:bg-gray-100 group uk-text-bold">
+                <span class="flex-1 ms-3 whitespace-nowrap"
+                  >TBI Milestones
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- content -->
+      <div class="p-4 sm:ml-64">
+        <div
+          class="lg:p-[5rem] md:p-[3rem] p-5 h-screen bg-white bg-opacity-90 rounded-lg text-black overflow-y-auto">
+          <h2 class="uk-text-bold text-lg mb-6">
+            I. Introduction to Anlag Ta Buksu Technology Business Incubator
+            (TBI)
+          </h2>
+          <p class="indent-[5rem] tracking-wide leading-[2] mb-6 text-justify">
+            Anlag Ta Buksu Technology Business Incubator (TBI) is a premier
+            initiative of Bukidnon State University (BUKSU), designed to foster
+            technology-driven entrepreneurship and innovation in the region. In
+            line with the university’s commitment to sustainable development and
+            its strategic role as a leader in research, innovation, and
+            technology commercialization, the TBI aims to nurture startups from
+            concept to market-ready businesses.
+          </p>
+          <p class="indent-[5rem] tracking-wide leading-[2] mb-6 text-justify">
+            The TBI operates as a physical and virtual space that provides
+            essential resources, mentorship, and networking opportunities to
+            entrepreneurs, students, and faculty. By leveraging the unique
+            strengths of the region, including its strong focus on
+            <span class="uk-text-bold"
+              >Horticulture, Eco-tourism, Agriculture, Research, and Technology
+              (HEART)</span
+            >, Anlag Ta Buksu TBI seeks to create a vibrant ecosystem where
+            technology meets real-world challenges.
+          </p>
+
+          <hr />
+
+          <!-- vision -->
+          <h2 class="uk-text-bold text-lg mb-6 mt-6">Vision</h2>
+
+          <p class="indent-[5rem] tracking-wide leading-[2] mb-6 text-justify">
+            A premier institution that fosters innovative and ethical leaders
+            for sustainable development, driving growth and technological
+            advancement in Bukidnon and beyond.
+          </p>
+
+          <hr />
+
+          <h2 class="uk-text-bold text-lg mb-6 mt-6">Mission</h2>
+
+          <p class="indent-[5rem] tracking-wide leading-[2] mb-6 text-justify">
+            To empower and support entrepreneurs in the development of
+            technology based startups, accelerating their growth from idea to
+            market success while contributing to regional economic development
+            through innovation, education, and collaboration.
+          </p>
+
+          <hr />
+
+          <h2 class="uk-text-bold text-lg mb-6">Goal</h2>
+
+          <p class="indent-[5rem] tracking-wide leading-[2] mb-6 text-justify">
+            To contribute to local, regional and national economic development
+            by advancing the entrepreneurial culture in the university,
+            nurturing the growth of new technology- based startups, and
+            accelerating the development of young entrepreneurial units from
+            'idea stage' to independent self-sustaining successful business in
+            the region.
+          </p>
+
+          <hr />
+
+          <h2 class="uk-text-bold text-lg mb-6 mt-6">
+            Objectives of Anlag Ta Buksu TBI
+          </h2>
+
+          <p class="indent-[5rem] tracking-wide leading-[2] mb-6 text-justify">
+            The overarching goal of Anlag Ta Buksu TBI is to create a thriving
+            entrepreneurial culture within Bukidnon State University and the
+            surrounding community. Specifically, the TBI seeks to:
+          </p>
+
+          <ul
+            class="list-disc lg:ml-[3rem] md:ml-[3rem] ml-5 tracking-wide leading-[1.5] mb-6 text-justify">
+            <li class="mb-2">
+              Promote Innovation and Entrepreneurship by fostering a culture of
+              innovation by providing a platform for faculty, students,
+              researchers, and alumni to engage in entrepreneurial activities.
+            </li>
+
+            <li class="mb-2">
+              Incubate Technology-based Startups by supporting startups in
+              various fields, particularly those aligned with the HEART sectors,
+              such as agriculture and eco tourism, through access to resources,
+              technical expertise, and mentorship.
+            </li>
+
+            <li class="mb-2">
+              Facilitate Technology Commercialization by aiding in the transfer
+              of university developed technologies to the market, bridging the
+              gap between research and commercial application.
+            </li>
+
+            <li class="mb-2">
+              Enhance Job Creation and Economic Growth by contributing to the
+              local, regional, and national economy by creating jobs, developing
+              new business models, and fostering innovation in key industries.
+            </li>
+
+            <li class="mb-2">
+              Build a Strong Support Network by establishing a robust network of
+              partners, including government agencies, investors, industry
+              leaders, and local businesses, to support the startup ecosystem.
+            </li>
+          </ul>
+
+          <hr />
+
+          <h2 class="uk-text-bold text-lg mb-6 mt-6">
+            About the Anlag Ta BukSU TBI
+          </h2>
+
+          <p class="indent-[5rem] tracking-wide leading-[2] mb-6 text-justify">
+            The Anlag Ta Buksu TBI is one of the few university-based technology
+            business incubators in Mindanao, providing critical infrastructure,
+            resources, and business support to new ventures. It is designed to
+            help startups grow and thrive in the competitive business
+            environment by offering:
+          </p>
+
+          <ul
+            class="list-disc lg:ml-[3rem] md:ml-[3rem] ml-5 tracking-wide leading-[1.5] mb-6 text-justify">
+            <li class="mb-2">
+              Office and laboratory spaces equipped with the latest technology.
+            </li>
+            <li class="mb-2">
+              Access to specialized equipment for prototyping and product
+              testing.
+            </li>
+
+            <li class="mb-2">
+              Mentoring and coaching from seasoned entrepreneurs and industry
+              experts.
+            </li>
+            <li class="mb-2">
+              Linkages to investors, funding agencies, and government support to
+              accelerate growth.
+            </li>
+          </ul>
+
+          <p class="indent-[5rem] tracking-wide leading-[2] mb-6 text-justify">
+            The TBI is not just a space for startups; it is a dynamic ecosystem
+            that connects entrepreneurs with a wealth of resources, fostering
+            collaboration between the academic community, government, and the
+            private sector.
+          </p>
+
+          <hr />
+
+          <h2 class="uk-text-bold text-lg mb-6 mt-6">
+            The Role of the TBI in Bukidnon State University
+          </h2>
+
+          <p class="indent-[5rem] tracking-wide leading-[2] mb-6 text-justify">
+            Recognizing the critical role of technology and innovation in
+            national development, Bukidnon State University established the
+            Anlag Ta Buksu TBI to serve Page | 3 as the heart of innovation
+            activities within the institution. It acts as a conduit between
+            academic research and industry, ensuring that new ideas generated by
+            university researchers can be translated into viable, marketable
+            products or services.
+          </p>
+
+          <p class="indent-[5rem] tracking-wide leading-[2] mb-6 text-justify">
+            Furthermore, the TBI plays a central role in building
+            entrepreneurial skills among students and faculty. Through its
+            programs, participants gain exposure to real world challenges,
+            learning how to turn innovative ideas into sustainable businesses.
+          </p>
+
+          <hr />
+
+          <h2 class="uk-text-bold text-lg mb-6 mt-6">Areas of Focus</h2>
+
+          <p class="indent-[5rem] tracking-wide leading-[2] mb-6 text-justify">
+            The TBI primarily focuses on technology-based entrepreneurship, with
+            an emphasis on sectors that are critical to the region’s
+            development. These focus areas include:
+          </p>
+
+          <ul
+            class="list-disc lg:ml-[3rem] md:ml-[3rem] ml-5 tracking-wide leading-[1.5] mb-6 text-justify">
+            <li class="mb-2">
+              Agriculture Technology (Agri-Tech): Supporting startups that are
+              developing solutions to improve the productivity and
+              sustainability of the agricultural sector, which is a key economic
+              driver in Bukidnon.
+            </li>
+            <li class="mb-2">
+              Eco-tourism and Environmental Technologies: Promoting innovations
+              that contribute to sustainable tourism and environmental
+              conservation, leveraging Bukidnon’s natural resources.
+            </li>
+
+            <li class="mb-2">
+              Information and Communication Technology (ICT): Encouraging
+              startups working in software development, mobile applications, and
+              multimedia solutions to address local and global needs.
+            </li>
+            <li class="mb-2">
+              Food and Beverage Technologies: Supporting innovations in food
+              processing and packaging that improve food safety and expand
+              market opportunities for local products.
+            </li>
+          </ul>
+
+          <p class="indent-[5rem] tracking-wide leading-[2] mb-6 text-justify">
+            By concentrating on these sectors, the Anlag Ta Buksu TBI aligns
+            itself with the National Innovation Agenda and Strategy Document
+            (NIASD) 2023-2032 while addressing specific needs in the Bukidnon
+            region.
+          </p>
+
+          <hr />
+
+          <h2 class="uk-text-bold text-lg mb-6 mt-6">Brand and Logo</h2>
+
+          <div class="w-full flex justify-center mb-4">
+            <img
+              style="width: 30rem; height: auto"
+              src="../dist/img/Anlag_Logo.png"
+              alt="Logo" />
+          </div>
+
+          <p class="mb-6 text-center italic">
+            Figure 1. Shown in this figure is the brand and logo of BUKSU TBI
+            called ANLAG, the university-based Technology Business Incubator of
+            the university.
+          </p>
+
+          <hr />
+
+          <h2 class="uk-text-bold text-lg mb-6 mt-6">The TBI Ecosystem</h2>
+
+          <p class="indent-[5rem] tracking-wide leading-[2] mb-6 text-justify">
+            For the TBI to thrive and be successful in the university, it needs
+            the help and support of the community around it. This includes the
+            government, industry, the private and the business sectors. Figures
+            2 shows the different groups of players that can help ANLAG TA BUKSU
+            TBI achieve its objectives and the activities that these players can
+            contribute.
+          </p>
+
+          <div class="w-full flex justify-center mb-4">
+            <img
+              style="width: 50rem; height: auto"
+              src="../dist/img/internal_environment.png"
+              alt="Logo" />
+          </div>
+
+          <p class="mb-6 text-center italic">
+            Figure 2. Shown in this figure is the ANLAG TA BUKSU TBI Ecosystem.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Footer -->
+    <footer class="bg-white dark:bg-gray-800">
+      <div class="mx-auto w-full max-w-screen-xl">
+        <div class="grid grid-cols-1 gap-8 px-4 py-6 lg:py-8 md:grid-cols-2">
+          <div>
+            <h2
+              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              More about ANLAG TA BUKSU-TBI
+            </h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li>
+                <p>
+                  wala ko kabalo unsay e butang diri Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Officiis amet natus vel optio
+                  ut, est?
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              Contacts & Address
+            </h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Discord Server</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Twitter</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Facebook</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="px-4 py-6 bg-gray-900 md:flex md:items-center md:justify-between">
+          <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center"
+            ><a href="../index.html">2024 ANLAG TA BUKSU-TB</a>.
+          </span>
+          <div
+            class="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 8 19">
+                <path
+                  fill-rule="evenodd"
+                  d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="sr-only">Facebook page</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 21 16">
+                <path
+                  d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+              </svg>
+              <span class="sr-only">Discord community</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 17">
+                <path
+                  fill-rule="evenodd"
+                  d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="sr-only">Twitter page</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="sr-only">GitHub account</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="sr-only">Dribbble account</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
