@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../dist/img/favicon.png" />
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="../dist/css/uikit.css" />
+
+    <title>ANLAG TA BUKSU-TBI: Documentation</title>
+  </head>
+  <body
+    class="bg-gray-100"
+    style="
+      background-image: url('../dist/img/background.png');
+      background-size: fit;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100vw 100vh;
+    ">
+    <!-- sidebar and container -->
+    <section class="uk-container relative">
+      <button
+        data-drawer-target="sidebar-multi-level-sidebar"
+        data-drawer-toggle="sidebar-multi-level-sidebar"
+        aria-controls="sidebar-multi-level-sidebar"
+        type="button"
+        class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+        <span class="sr-only">Open sidebar</span>
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            clip-rule="evenodd"
+            fill-rule="evenodd"
+            d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+        </svg>
+      </button>
+
+      <!-- sidebar -->
+      <aside
+        id="sidebar-multi-level-sidebar"
+        class="absolute top-0 left-0 z-40 w-80 h-screen lg:mt-4 md:mt-4 transition-transform -translate-x-full sm:translate-x-0"
+        aria-label="Sidebar">
+        <div
+          class="rounded-lg h-full px-3 py-4 overflow-y-auto bg-white bg-opacity-80">
+          <ul class="space-y-2 font-medium">
+            <li>
+              <a
+                href="/"
+                class="flex items-center p-2 text-gray-900 rounded-lg group">
+                <img
+                  style="width: 200px; height: auto"
+                  src="../dist/img/Logo.png"
+                  alt="Logo" />
+              </a>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="flex items-center w-full p-2 text-base text-black transition duration-75 rounded-lg group hover:bg-gray-100"
+                aria-controls="dropdown-example"
+                data-collapse-toggle="dropdown-example">
+                <span
+                  class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap uk-text-bold"
+                  >Introduction</span
+                >
+                <svg
+                  class="w-3 h-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4" />
+                </svg>
+              </button>
+              <ul id="dropdown-example" class="hidden py-2 space-y-2">
+                <li>
+                  <a
+                    href="introduction.html"
+                    class="flex items-center w-full p-2 text-gray-500 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >Overview</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center w-full p-2 text-gray-500 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >Vision, Mission, and Goal
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center w-full p-2 text-gray-500 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >Objectives
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center w-full p-2 text-gray-500 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center w-full p-2 text-gray-500 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >Role</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center w-full p-2 text-gray-500 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >Areas of Focus
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center w-full p-2 text-gray-500 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >Brand and Logo
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center w-full p-2 text-gray-500 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >The TBI Ecosystem</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="purpose.html"
+                class="flex items-center p-2 text-black rounded-lg hover:bg-gray-100 group uk-text-bold">
+                <span class="flex-1 ms-3 whitespace-nowrap">Purpose </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center p-2 text-black rounded-lg hover:bg-gray-100 group uk-text-bold">
+                <span class="flex-1 ms-3 whitespace-nowrap"
+                  >Contents and Scope</span
+                >
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center p-2 text-black rounded-lg hover:bg-gray-100 group uk-text-bold">
+                <span class="flex-1 ms-3 whitespace-nowrap"
+                  >Definition of Terms
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center p-2 text-black rounded-lg hover:bg-gray-100 group uk-text-bold">
+                <span class="flex-1 ms-3 whitespace-nowrap"
+                  >Organizational Structure
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center p-2 text-black rounded-lg hover:bg-gray-100 group uk-text-bold">
+                <span class="flex-1 ms-3 whitespace-nowrap"
+                  >Operational Strategies
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center p-2 text-black rounded-lg hover:bg-gray-100 group uk-text-bold">
+                <span class="flex-1 ms-3 whitespace-nowrap"
+                  >Implementing Strategies
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center p-2 text-black rounded-lg hover:bg-gray-100 group uk-text-bold">
+                <span class="flex-1 ms-3 whitespace-nowrap"
+                  >TBI Sustainability
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center p-2 text-black rounded-lg hover:bg-gray-100 group uk-text-bold">
+                <span class="flex-1 ms-3 whitespace-nowrap"
+                  >TBI Milestones
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- content -->
+      <div class="p-4 sm:ml-64">
+        <div
+          class="lg:p-[5rem] md:p-[3rem] p-5 h-screen bg-white bg-opacity-90 rounded-lg text-black overflow-y-auto">
+          <h2 class="uk-text-bold text-lg mb-6">ANLAG TA BUKSU TBI Milestones</h2>
+
+        <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+            <table class="w-full text-sm text-left rtl:text-right text-gray-500">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">
+                            DATES
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            EXPECTED TASKS/DUTIES 
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            September 1-19, 2022
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended the DOST HEIRIT TBI Training for the month of September 2022 and submitted the technology and institutional pitch output.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            September 20, 2022
+                        </th>
+                        <td class="px-6 py-4">
+                            Submitted and presented the 5-minute required output for technology and institutional pitching to DOST HEIRIT TBI and UPSCALE.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            October 1-31, 2022
+                        </th>
+                        <td class="px-6 py-4">
+                            Planned and communicated for the Commercialization Webinar on Value and Value Proposition.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            October 3 & 7, 2022
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended the Flag-raising and flag-lowering ceremony sponsored by the OVPREI.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            October 5, 2022
+                        </th>
+                        <td class="px-6 py-4">
+                            Facilitated the Start-up 101 activity of DICT.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            October 18, 2022
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended the USTP-FEC Updates.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            October 25, 2022
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended Startups and Investors Forum.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            October 26-27, 2022
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended the Farmers and Industry Encounters through Science and Technology Agenda (FIESTA) at Caraga State University, Butuan City.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            November 1-11, 2022
+                        </th>
+                        <td class="px-6 py-4">
+                            Planned and communicated for the Miriam College and the University of the Philippines Diliman for the benchmarking activity on November 14 and 15.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            November 1-11, 2022
+                        </th>
+                        <td class="px-6 py-4">
+                            Planned and communicated with HEIRIT 2.0 for the 6th TBI Summit on November 16, 2022.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            November 7-10, 2022
+                        </th>
+                        <td class="px-6 py-4">
+                            Facilitated the Patent Search and Drafting 4-day Training and Workshop.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            November 14-15, 2022
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended and represented the university for the benchmarking activity in Miriam College and UP Diliman.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            November 16, 2022
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended and represented the university for the 6th TBI Summit in Taguig City.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            December 1-16, 2022
+                        </th>
+                        <td class="px-6 py-4">
+                            Processed and facilitated the liquidation for the benchmarking activity in Miriam College and UP Diliman.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            December 1-16, 2022
+                        </th>
+                        <td class="px-6 py-4">
+                            Processed and facilitated the liquidation for the 6th TBI Summit in Taguig City.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            February 1-28, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended the series of technology business incubation training sessions for the HIHEIRIT PA MORE project of the DOST-PCIEERD.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            February 22, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended the Online Benchmarking to CARAGA STATE UNIVERSITY.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            March 1-31, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended the series of technology business incubation training sessions for the HIHEIRIT PA MORE project of the DOST-PCIEERD.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            April 18, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended and participated in the technology business incubation training sessions for the HIHEIRIT PA MORE project of the DOST-PCIEERD (Session 2: Understanding Financial Statements).
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            April 19, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Assisted in the conduct of the Patent Draft Enhancement Writeshop.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            April 22-24, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Co-organized and conducted Bukidnon Start-up Weekend Bukidnon 5 at Bukidnon State University.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            May 2, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended and participated in the technology business incubation training sessions for the HIHEIRIT PA MORE project of the DOST-PCIEERD (Session 2: Understanding Financial Statements).
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            May 5, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Assisted in the conduct of the Business Model Canvas Writeshop.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            June 8, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Assisted and facilitated the conduct of Virtual Orientation on Wadwani Entrepreneur Network.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            July 6, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Conducted a consultative meeting with Prof. Andrew Wong, Founder of E3HUBS, and Ms. Keren Happuch A. Lacadin, Deputy Focal for ICT Industry Development Bureau at DICT.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            July 20, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Conducted a consultative meeting with Engr. Bronson Garcia Mabulay for the Anlag Ta BUKSU TBI Activities.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            July 24-28, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Prepared and submitted the TBI Plan of Activities for the month of August to November 2023.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            August 8, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended and represented BUKSU to Regional Research Development and Innovation Committee-X.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            August 10, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended the Virtual Joint Academic and Administrative Councils Meeting.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            August 25, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended and represented BUKSU to the MindSET 4 Innovation ReSEED Startup Ecosystem Meeting.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            August 29, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended the Project Procurement Management Program workshop.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            August 29-31, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Facilitated the conduct of Market Validation and Pitch Deck Creation.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            September 13-14, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended the Davao Startup Weekend Summit.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            October 17, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Organized the TBI Awareness and Planning Session for BUKSU Leadership Team.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            October 18-20, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended a 3-day Ideation and Solution Validation Workshop.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            October 18-20, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Presented and revised the ARTIFAB LAB Project Proposal.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            October 27, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended the Virtual Joint Academic and Administrative Councils Meeting.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            October 10, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended the MOA Signing for Mindset for Innovation.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            October 17, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Organized the TBI Awareness and Planning Session for BUKSU Leadership Team.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            November 7-10, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Co-organized Patent Search and Drafting.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            November 11, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Co-organized MOA Signing between BUKSU and DTI-Bukidnon for ARTIFAB LAB.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            November 20, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Submitted the video needed for the Share to Heal Season 3 Episode 7.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            November 22-24, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended the Futures Thinking CapDev Series.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            November 22-24, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended and hosted the WSAP Women’s and Gender Studies Association and Annual International Conference.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            November 30, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Moderator in the 2023: 1st Regional Research and Innovation Summit.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            December 1, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Moderated the Engineering and Technology Strand during the 1st Regional Research and Innovation Summit.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            December 4, 2023
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended the pre-bidding of the ARTFABLAB with the DTI R10 and DTI Bukidnon.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            January 17-19, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended and participated in the capacity building on university futures thinking and foresight-phase 3: Scenario and Strategy Development.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            January 2-23, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Prepared and submitted the List of TBI Activities, communication with Corresponding Budgetary Requirements, consultative meetings, PR, Program, certificate, Hotel and venue booking, contacting resource speakers and Memo.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            January 2-26, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Organized and implemented the Higher Education Institution Faculty Entrepreneurship Bootcamp.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            February 2-28, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Participated in the series of meetings as collaborator representing ANLAG ta BUKSU conducted by the DICT as preparation for the STEP UP NORTHERN MINDANAO DEMO DAY.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            February 29, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Hosted the STEP UP NORTHERN MINDANAO DEMO DAY at Valencia Robinson’s Place, Valencia City Bukidnon.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            March 1-22, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Coordinated with the Resource Person for the Recalibration of Syllabuses for Technopreneurship, The Entrepreneurial Mind, Entrepreneurial Management, and selected subjects with entrepreneurship and technology components on March 25, 2024.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            March 1-22, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Coordinated with Resource Person for the FEC Filipinnovation Entrepreneurship Corps on March 26 and 27, 2024.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            April 16, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended and participated in the DICT SCALE Malaybalay City Bukidnon Startup Ecosystem Mapping.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            April 23, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended and participated in the National Innovation Day Celebration at SM Uptown, Cagayan de Oro City.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            May 6-10, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Followed up and facilitated in the updating of the Entrepreneurship-related syllabuses.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            May 1-31, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Assisted in the communication and coordination for the ARTIFAB LAB through DTI and NORDE.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            June 7, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended the last day of training for the ARTIFABLAB machineries.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            June 10-12, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended and participated in the Design Thinking Workshop for Professionals in Davao City.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            June 25, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended the Provincial Small and Medium Enterprise Development (SMED) Council- Bukidnon Second Quarter Meeting.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            June 3-28, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Assisted in the communication and coordination for the ARTIFABLAB Launching Schedule.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            June 10-11, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Prepared the slides and presentation for the DTI Bukidnon’s 2024 Kapatid Mentor Me KMME Summit: 2024 Homecoming Plus at Terraza, Loiza’s Pavilion, Malaybalay City.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            July 12, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended as the Resource Speaker during the DTI Bukidnon KMME Kapatid Mentors Me Program Homecoming Plus at Lateraza, Loiza’s Pavilion, Malaybalay City.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            July 1-22, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Assisted in the communication and coordination for the ARTIFABLAB Launching Schedule.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            July 23, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Coordinated with DTI, BUKSU Offices, A14 Productions, and the Gardens for the launching of the ARTIFABLAB.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            August 9, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Assisted the proprietor and conducted consultation for the TeJenn products.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            August 20, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended the Wadhwani Foundation Onboarding of the Faculty.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            September 2, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Coordinated with the DICT Bukidnon for the upcoming RAISE Region 10 Startup Awareness Roadshow.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            September 4, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Successfully conducted the DICT Bukidnon for the upcoming RAISE Region 10 Startup Awareness Roadshow.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            September 9-13, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Drafted the ARTIFABLAB Proposal for Phase 2.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            September 18, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Submitted the ARTIFABLAB Proposal for Phase 2 to DTI.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            September 24, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Attended a consultative meeting with the DTI Division Chief and Project Heads.
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b hover:bg-gray-50">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            September 30, 2024
+                        </th>
+                        <td class="px-6 py-4">
+                            Updated the ARTIFABLAB Proposal for Phase 2 integrating the comments from the consultative meeting.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- Start Footer -->
+    <footer class="bg-white dark:bg-gray-800">
+      <div class="mx-auto w-full max-w-screen-xl">
+        <div class="grid grid-cols-1 gap-8 px-4 py-6 lg:py-8 md:grid-cols-2">
+          <div>
+            <h2
+              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              More about ANLAG TA BUKSU-TBI
+            </h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li>
+                <p>
+                  wala ko kabalo unsay e butang diri Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Officiis amet natus vel optio
+                  ut, est?
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2
+              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              Contacts & Address
+            </h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Discord Server</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Twitter</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Facebook</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="px-4 py-6 bg-gray-900 md:flex md:items-center md:justify-between">
+          <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center"
+            ><a href="../index.html">2024 ANLAG TA BUKSU-TB</a>.
+          </span>
+          <div
+            class="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 8 19">
+                <path
+                  fill-rule="evenodd"
+                  d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="sr-only">Facebook page</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 21 16">
+                <path
+                  d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+              </svg>
+              <span class="sr-only">Discord community</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 17">
+                <path
+                  fill-rule="evenodd"
+                  d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="sr-only">Twitter page</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="sr-only">GitHub account</span>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+              <svg
+                class="w-4 h-4"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="sr-only">Dribbble account</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
