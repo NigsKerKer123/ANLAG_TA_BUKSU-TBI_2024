@@ -16,6 +16,15 @@
     <link rel="stylesheet" href="../dist/css/uikit.css" />
 
     <title>ANLAG TA BUKSU-TBI: Documentation</title>
+    <script>
+      function smoothScroll(target) {
+        document.querySelector(target).scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    </script>
+
     <style>
       @keyframes shake {
         0%,
@@ -125,6 +134,7 @@
               <ul id="dropdown-example" class="hidden py-2 space-y-2">
                 <li>
                   <a
+                    onclick="smoothScroll('#overview')"
                     href="#"
                     style="text-decoration: none"
                     class="shake flex items-center w-full p-2 text-gray-500 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 hover:text-black"
@@ -133,6 +143,7 @@
                 </li>
                 <li>
                   <a
+                    onclick="smoothScroll('#vision')"
                     href="#"
                     style="text-decoration: none"
                     class="flex items-center w-full p-2 text-gray-500 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 hover:text-black"
@@ -141,7 +152,7 @@
                 </li>
                 <li>
                   <a
-                    href="#"
+                    onclick="smoothScroll('#objectives')"
                     style="text-decoration: none"
                     class="flex items-center w-full p-2 text-gray-500 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 hover:text-black"
                     >Objectives
@@ -149,7 +160,7 @@
                 </li>
                 <li>
                   <a
-                    href="#"
+                    onclick="smoothScroll('#about')"
                     style="text-decoration: none"
                     class="flex items-center w-full p-2 text-gray-500 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 hover:text-black"
                     >About</a
@@ -157,7 +168,7 @@
                 </li>
                 <li>
                   <a
-                    href="#"
+                    onclick="smoothScroll('#role')"
                     style="text-decoration: none"
                     class="flex items-center w-full p-2 text-gray-500 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 hover:text-black"
                     >Role</a
@@ -165,7 +176,7 @@
                 </li>
                 <li>
                   <a
-                    href="#"
+                    onclick="smoothScroll('#area')"
                     style="text-decoration: none"
                     class="flex items-center w-full p-2 text-gray-500 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 hover:text-black"
                     >Areas of Focus
@@ -173,7 +184,7 @@
                 </li>
                 <li>
                   <a
-                    href="#"
+                    onclick="smoothScroll('#brand')"
                     style="text-decoration: none"
                     class="flex items-center w-full p-2 text-gray-500 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 hover:text-black"
                     >Brand and Logo
@@ -181,7 +192,7 @@
                 </li>
                 <li>
                   <a
-                    href="#"
+                    onclick="smoothScroll('#tbi')"
                     style="text-decoration: none"
                     class="flex items-center w-full p-2 text-gray-500 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 hover:text-black"
                     >The TBI Ecosystem</a
@@ -283,7 +294,7 @@
       <div class="p-4 sm:ml-64">
         <div
           class="lg:p-[5rem] md:p-[3rem] p-5 h-screen shadow-md bg-white rounded-lg text-black overflow-y-auto">
-          <h2 class="uk-text-bold text-lg mb-6">
+          <h2 id="overview" class="uk-text-bold text-lg mb-6">
             I. Introduction to Anlag Ta Buksu Technology Business Incubator
             (TBI)
           </h2>
@@ -311,7 +322,7 @@
           <hr />
 
           <!-- vision -->
-          <h2 class="uk-text-bold text-lg mb-6 mt-6">Vision</h2>
+          <h2 id="vision" class="uk-text-bold text-lg mb-6 mt-6">Vision</h2>
 
           <p class="indent-[5rem] tracking-wide leading-[2] mb-6 text-justify">
             A premier institution that fosters innovative and ethical leaders
@@ -345,7 +356,7 @@
 
           <hr />
 
-          <h2 class="uk-text-bold text-lg mb-6 mt-6">
+          <h2 id="objectives" class="uk-text-bold text-lg mb-6 mt-6">
             Objectives of Anlag Ta Buksu TBI
           </h2>
 
@@ -391,7 +402,7 @@
 
           <hr />
 
-          <h2 class="uk-text-bold text-lg mb-6 mt-6">
+          <h2 id="about" class="uk-text-bold text-lg mb-6 mt-6">
             About the Anlag Ta BukSU TBI
           </h2>
 
@@ -432,7 +443,7 @@
 
           <hr />
 
-          <h2 class="uk-text-bold text-lg mb-6 mt-6">
+          <h2 id="role" class="uk-text-bold text-lg mb-6 mt-6">
             The Role of the TBI in Bukidnon State University
           </h2>
 
@@ -455,7 +466,9 @@
 
           <hr />
 
-          <h2 class="uk-text-bold text-lg mb-6 mt-6">Areas of Focus</h2>
+          <h2 id="area" class="uk-text-bold text-lg mb-6 mt-6">
+            Areas of Focus
+          </h2>
 
           <p class="indent-[5rem] tracking-wide leading-[2] mb-6 text-justify">
             The TBI primarily focuses on technology-based entrepreneurship, with
@@ -498,7 +511,9 @@
 
           <hr />
 
-          <h2 class="uk-text-bold text-lg mb-6 mt-6">Brand and Logo</h2>
+          <h2 id="brand" class="uk-text-bold text-lg mb-6 mt-6">
+            Brand and Logo
+          </h2>
 
           <div class="w-full flex justify-center mb-4">
             <img
@@ -515,7 +530,9 @@
 
           <hr />
 
-          <h2 class="uk-text-bold text-lg mb-6 mt-6">The TBI Ecosystem</h2>
+          <h2 id="tbi" class="uk-text-bold text-lg mb-6 mt-6">
+            The TBI Ecosystem
+          </h2>
 
           <p class="indent-[5rem] tracking-wide leading-[2] mb-6 text-justify">
             For the TBI to thrive and be successful in the university, it needs
